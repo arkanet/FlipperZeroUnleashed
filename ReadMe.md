@@ -1,5 +1,5 @@
 </a>
-Haisenteck - Flipper zero firmware Mod</h3> <br>
+<h3>Haisenteck - Flipper zero firmware Mod</h3><br>
 link al file di installazione: https://github.com/haisenteck/Haisenteck-Flipper-MOD/blob/dev/dist/f7-C/flipper-z-f7-update-local.tgz <br>
 <br>
 <br>
