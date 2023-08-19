@@ -1,6 +1,7 @@
 </a>
 </h3>
 #### **This firmware is a fork from** [DarkFlippers/unleashed-firmware](https://github.com/DarkFlippers/unleashed-firmware)
+extra app: https://github.com/xMasterX/all-the-plugins
 <br>
 <br>
 # Novità<br>
