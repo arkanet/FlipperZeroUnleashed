@@ -1,10 +1,5 @@
 </a>
-</h3>
-#### **This firmware is a fork from** [DarkFlippers/unleashed-firmware](https://github.com/DarkFlippers/unleashed-firmware)<br>
-<br>
-app from: https://github.com/xMasterX/all-the-plugins
-<br>
-<h3>Haisenteck - Flipper zero firmware Mod</h3> <br>
+Haisenteck - Flipper zero firmware Mod</h3> <br>
 link al file di installazione: https://github.com/haisenteck/Haisenteck-Flipper-MOD/blob/dev/dist/f7-C/flipper-z-f7-update-local.tgz <br>
 <br>
 <br>
@@ -16,4 +11,7 @@ link al file di installazione: https://github.com/haisenteck/Haisenteck-Flipper-
 - **APP**<br>
 	- Aggiunto quasi tutte le app trovate e aggiornate alle API 35.0<br>
 <br>
+<br>
+#### **This firmware is a fork from** [DarkFlippers/unleashed-firmware](https://github.com/DarkFlippers/unleashed-firmware)<br>
+app from: https://github.com/xMasterX/all-the-plugins
 <br>
