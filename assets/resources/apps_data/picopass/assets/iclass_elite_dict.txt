@@ -1,6 +1,4 @@
-
 ## From https://github.com/RfidResearchGroup/proxmark3/blob/master/client/dictionaries/iclass_default_keys.dic
-
 # key1/Kc from PicoPass 2k documentation
 7665544332211000
 # SAGEM
@@ -12,7 +10,13 @@
 # From pastebin: https://pastebin.com/uHqpjiuU
 6EFD46EFCBB3C875
 E033CA419AEE43F9
-
+# iCopy-x DRM keys
+2020666666668888 # iCL tags
+6666202066668888 # iCS tags reversed from the SOs
+# 
+5b7c62c491c11b39 # from loclass demo file.
+F0E1D2C3B4A59687 # Kd from PicoPass 2k documentation						   
+AEA684A6DAB23278 # AA1												 
 # default picopass KD / Page 0 / Book 1
 FDCB5A52EA8F3090
 237FF9079863DF44
@@ -30,12 +34,9 @@ F41DAF58B20C8B91
 28877A609EC0DD2B
 66584C91EE80D5E5
 C1B74D7478053AE2
-
 # default iCLASS RFIDeas
 6B65797374726B72
-
 # CTF key
 5C100DF7042EAE64
-
 # iCopy-X DRM key (iCE product)
 2020666666668888
