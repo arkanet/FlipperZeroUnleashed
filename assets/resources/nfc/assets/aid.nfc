@@ -62,17 +62,15 @@ A0000003591010028001: Girocard EAPS
 A0000003710001: InterSwitch Verve Card
 A0000004540010: Etranzact Genesis Card
 A0000004540011: Etranzact Genesis Card 2
-A0000004766C: GOOGLE_PAYMENT
-A0000005241010: RuPay
-A0000006472F0001: FIDO U2F
+A0000004766C: GOOGLE_PAYMENT_AID
+A0000006472F0001: U2F/FIDO2 authenticator
 A0000006723010: TROY chip credit card
 A0000006723020: TROY chip debit card
 A0000007705850: XTRAPOWER
-B012345678: Maestro TEST
 D27600002545500100: Girocard
 D5780000021010: Bankaxept
 F0000000030001: BRADESCO
-A000000003000000: (VISA) Card Manager
+A000000003000000: VISA Card Manager
 A000000003534441: Schlumberger SD
 A0000000035350: Security Domain
 A000000003535041: Security Domain
@@ -96,7 +94,6 @@ A000000025010104: American Express
 A00000002949034010100001: HSBC
 A00000002949282010100000: Barclay
 A00000005945430100: Girocard Electronic Cash
-A0000000980840: Visa Common Debit
 A0000001570010: AMEX
 A0000001570020: MasterCard
 A0000001570021: Maestro
@@ -113,7 +110,6 @@ A000000157010C: WIRCard
 A000000157010D: Power Card
 A0000001574443: DINERS CLUB
 A0000001574444: Supercard Plus
-A00000022820101010: SPAN
 A000000308000010000100: ID-ONE PIV BIO
 A0000003241010: Discover Zip
 A000000333010101: UnionPay Debit
@@ -135,12 +131,9 @@ D040000004000002: ATM
 D04000000B000002: Retail
 D04000000C000002: Bank_Data
 D04000000D000002: Shopping
-D040000013000001: DF_UNI_Kepler1
 D040000013000001: DF_Schüler1
-D040000013000002: DF_UNI_Kepler2
 D040000013000002: DF_Schüler2
 D040000014000001: DF_Mensa
-D040000015000001: DF_UNI_Ausweis
 D040000015000001: DF_Ausweis
 D0400000190001: EMV ATM Maestro
 D0400000190002: EMV POS Maestro
@@ -181,7 +174,6 @@ A0000000791201: CAC JDM
 A0000000791202: CAC JDM
 A0000000871002FF49FF0589: Telenor USIM
 A00000008810200105C100: BuyPass BIDA
-A000000088102201034221: BuyPass BEID
 A000000088102201034321: BuyPass BEID
 A0000001110101: Postcard
 A0000001160300: PIV CHUID
@@ -214,7 +206,6 @@ A00000032301: MUSCLE Applet Package
 A0000003230101: MUSCLE Applet Instance
 A000000337301000: Retrait
 A000000337101000: Standard
-A0000003591010: [UNKNOWN]
 A00000035910100380: PagoBANCOMAT
 A0000003660001: Postamat
 A0000003660002: Postamat VISA	
@@ -225,7 +216,6 @@ A00000039742544659: Microsoft IDMP AID
 A0000003974349445F0100: Microsoft PNP AID
 A0000004271010: Hiperchip
 A0000004320001: Universal Electronic Card
-A0000004360100: Ticket Restaurant
 A0000004391010: Exchange ATM card
 A0000004762010: GOOGLE_CONTROLLER_AID
 A0000004763030: GOOGLE_MIFARE_MANAGER_AID
@@ -239,7 +229,6 @@ A0000005591010FFFFFFFF8900000D00: ISD-P Executable Load File
 A0000005591010FFFFFFFF8900000E00: ISD-P Executable Module
 A0000005591010FFFFFFFF8900000F00: Reserved value for the Profile’s ISD-P
 A0000005591010FFFFFFFF8900001000: ISD-P Application
-A00000061700: Fidesmo javacard
 A0000006200620: Debit Network Alliance
 A0000006260101010001: SwissPass/SwissPass Plus
 A0000006351010: Bancnet
@@ -268,8 +257,703 @@ D2760001240102000000000000010000: OpenPGP Card
 D27600012402: SmartChess
 D2760001240200010000000000000000: SmartChess
 D4100000011010: Republic of Korea
-D5280050218002: [UNKNOWN]
+D5280050218002: Netherlands
 D8040000013010: PROSTIR Card
 E80704007F00070302: nPA
 E82881C11702: AlphaCard application
 E828BD080F: ISO-7816-15 EF.DIR
+315041592E: Visa International
+325041592E: Visa International
+44464D4641: DeviceFidelity
+501649FF20: Multibanco
+A000000001: PBS Danmønt A/S
+A000000002: Mondex International Ltd.
+A000000003: Visa International
+A000000004: Mastercard International
+A000000005: Switch Card Services Ltd.
+A000000006: Cardintell S.A.
+A000000007: National Westminster Bank Plc
+A000000008: GyD Iberica
+A000000009: ETSI
+A000000010: Europay International
+A000000011: TSB Bank Plc
+A000000012: BT
+A000000013: OTB Card Company Limited
+A000000014: Touch Technology Inc.
+A000000015: Pocket Key S.R.L.
+A000000016: Computercentrum C. van de Velden B:V (CCV)
+A000000017: Veron SpA
+A000000018: GEMPLUS
+A000000019: ID Data Systems Ltd.
+A000000020: Laurel Intelligent Systems Co. Ltd.
+A000000021: National CacheCard Co.
+A000000022: G.I.E. SESAM-VITALE
+A000000023: ATA/IATA
+A000000024: Midland Bank Plc
+A000000026: Nationwide Building Society
+A000000027: OSI Plus Corporation
+A000000028: MONET+
+A000000029: LINK Interchange Network Ltd
+A000000030: Schlumberger Industries Identif d’Encarteur PR050
+A000000031: Kokusai Denshin Denwa Co., Ltd.
+A000000032: De Post Belgie
+A000000033: Banque Carrefour de la Securite Sociale
+A000000034: Bank of Scotland
+A000000035: Sistema 4B
+A000000036: The Co-operative Bank
+A000000037: SEIS
+A000000038: Delhaize De Leeuw
+A000000039: Acorn Group
+A000000040: ICL
+A000000041: Timelox AB
+A000000042: Groupement des Cartes Bancaires “CB”
+A000000043: Eclipse Medi Save America Corp.
+A000000044: GSS (Global Specification for Short Range Communication)
+A000000045: Barclays
+A000000046: Transtex S.A.
+A000000047: Security Dynamics Techn. Inc.
+A000000048: CARDAG, Karten und Technologie
+A000000049: Clydesdale Bank P.L.C.
+A000000050: Yorkshire Bank P.L.C.
+A000000051: Northern Bank Limited
+A000000052: Sainsbury Supermarkets Ltd. (ATC-payments)
+A000000053: Sani Group Italia S.R.L.
+A000000054: Alacarte Engineering
+A000000055: BankomatCentralen AB
+A000000056: Datakey, Inc.
+A000000057: Global Chipcard Alliance (GCA)
+A000000058: AB InTech
+A000000059: Zentraler Kreditausschuss (ZKA)
+A000000060: Applied Card Technologies Ltd
+A000000061: Mycal Card Incorporated
+A000000062: Sun Microsystems Inc.
+A000000063: RSA Laboratories
+A000000064: Schindler Elevator Corp.
+A000000065: JCB CO., LTD.
+A000000066: Secunet Security Networks GmbH
+A000000067: Iris Technologies Sdn. Bhd.
+A000000068: CardLogix Corporation
+A000000069: Société Européenne de Monnaie Electronique SEME
+A000000070: Prism Card Technologies
+A000000071: Euro Information
+A000000072: Royal Bank of Canada
+A000000073: Netlink Consortium
+A000000074: Smart Card Solutions (Development Services) Ltd.
+A000000075: Open Interactive Limited
+A000000077: Oberthur Technologies
+A000000078: Welcome Real-Time
+A000000079: Activcard Europe S.A.
+A000000080: Smart TV
+A000000081: Worldcard (2000) Ltd.
+A000000082: Union Internationale des Chemins de Fer
+A000000083: Percomad B.V.
+A000000084: Precise Biometrics AB
+A000000085: USIS Management Inc.
+A000000086: Strålfors AB
+A000000087: Third Generation Partnership Project (3GPP)
+A000000088: Buypass AS
+A000000089: American Association of Motor Vehicle Administrators
+A000000090: Smart Card Solutions, LIC
+A000000091: Cybermark
+A000000092: Mobile-Mind
+A000000093: Ask S.A.
+A000000094: MULTOS Promotion Association
+A000000095: Incard S.p.A.
+A000000096: Sa Proton World International N.V.
+A000000097: CIC GLOBAL
+A000000099: Cryptocard Corporation
+A000000100: Net Time Corp.
+A000000101: Hitachi Ltd.
+A000000102: Syntactics Limited
+A000000103: Catuity Incorporated
+A000000104Credit Cards Ltd.
+A000000105: Digital Pockets, LLC
+A000000106: Protective Technology
+A000000107: HSB Cards & Card Systems B.V.
+A000000108: AETeurope b.v.
+A000000109: Citicorp Development Center Inc.
+A000000110: The Boots Company PLC
+A000000111: Die Post Postfinance
+A000000112: Lironic, INC.
+A000000113: Datacard Platform Seven Limited
+A000000114: Sila Communications Scandinavia Aps
+A000000115: NTT Communications Corporation
+A000000116: GSA – TFCS
+A000000117: Airtel Movil S.A.
+A000000118: Card
+A000000119: Logico Smartcard Solutions GmbH.
+A000000120: PBS Data A/S
+A000000121: PBS Danmark A/S
+A000000122: Humetrix.com, Inc.
+A000000123: Smartcard EZ.com, Inc.
+A000000124: The Brodie Group
+A000000125: Department of Veterans Affairs
+A000000126: Shonkh Technologies International Limited
+A000000127: SecureNet
+A000000128: Infineer Ltd
+A000000129: Carde Systems Inc.
+A000000130: Global Consumer Technologies, Inc.
+A000000131: Mxi Technologies Ltd.
+A000000132: Java Card Forum
+A000000133: St. Geroge Bank Australia
+A000000134: Smartix International Corporation
+A000000135: Goldkey Technology Corporation
+A000000136: Worldsmart Technology
+A000000137: BZA Bargeldlose Zahlungs- und Abrechnungssysteme GmbH
+A000000138: Acer Internet Services, Inc.
+A000000139Japan Point Anex Co., Ltd.
+A000000140: TDS TODOS DATA SYSTEM AB
+A000000141: Associazione Bancaria Italiana
+A000000142: Toppan Printing Co. Ltd.
+A000000143: ANZ Banking Group
+A000000144: Multos Consortium
+A000000145: Yokosuka City
+A000000146: Keihin Electric Express Railway Co., Ltd.
+A000000147: Defense Manpower Data Center
+A000000149: CISRA (Canon Research Systems Research Australia Pty Ltd)
+A000000150: Smart Chip Limited
+A000000151: GlobalPlatform, Inc.
+A000000152: Diners Club International Ltd.
+A000000153: National Credit Card Center of R.O.C.
+A000000154: Banrisul – Banco do Estado do Rio Grande do SUL – S.A.
+A000000155: Deltaknot SDN. BHD.
+A000000156: HOB electronic GmbH & Co. KG
+A000000157: Zühlke Engineering AG
+A000000158: Cornish Key
+A000000159: Hyweb Technology Co., Ltd.
+A000000160: trust Commercial Bank
+A000000161: Advanced Wave
+A000000162: Europay (Switzerland) SA
+A000000163: Prepayment Cards Limited
+A000000164: Athena Smartcard Ltd
+A000000165: S-Card A/S
+A000000166: Identix Incorporated
+A000000167: IBM
+A000000168: Dai Nippon Printing Co., Ltd. (DNP)
+A000000169: Smart Chip Technologies, LLC
+A000000170: The Chinese Bank
+A000000171: Decru, Inc.
+A000000172: Financial Information Service Co. Ltd.
+A000000174: Sodexho-ccs
+A000000175: Panini Italia Srl
+A000000176: Banksys
+A000000177: Ministère de L’Intérieur
+A000000178: Europay Austria Zahlungsverkehrssysteme GmbH
+A000000179: University of Science and Technology
+A000000180: Cheque Dejeuner
+A000000181: BGP E-Services S.A.
+A000000182: Thalys International
+A000000183: Changent Systems Inc.
+A000000184: DSI Direccao dos Servicos de Identificacao: Macao SAR
+A000000185: Post Office Limited
+A000000186: Oberthur Card systems Ltd.
+A000000187: Privacom B.V.
+A000000188: Diners Club Switzerland Ltd
+A000000189: Consolidated Computer Services
+A000000190: Cardis Research & Development
+A000000191: Syscom Technologies Limited
+A000000192: Syscom Corporation
+A000000193: AccessArena AG
+A000000194: Logos Smart Card A/S
+A000000195: Amity Software Inc.
+A000000196: Capita Business Services Ltd
+A000000197: European Committee for Standardization – CEN
+A000000198: Ministry of Treasure
+A000000199: Ichikawa City
+A000000200: NonProfit Organization Ichikawa Life Network Club
+A000000201: Funabashi City
+A000000202: Kishware Co.
+A000000203: National Australia Group Europe Ltd.
+A000000204: Association for Payment Clearing Services
+A000000206: Nordea Bank Sweden AB
+A000000207: Cardtronic Technology Inc.
+A000000209: Cassis International Pte. Ltd.
+A000000210: TheTitan Corporation, Titan Secure Solutions
+A000000211: Saflink Corporation
+A000000212: Cyberpro Technologies Inc.
+A000000213: Sharp Corporation
+A000000214: Landis + Gyr
+A000000215: HiSmarTech Co., Ltd.
+A000000216: ITSO Ltd.
+A000000217: WAY Systems, Inc.
+A000000218: WEBUNDCO GmbH & Co KG
+A000000219: National Bank of Greece S.A.
+A000000220: Samsung SDS Co., Ltd.
+A000000221: E.F.G. Eurobank Ergasias S.A.
+A000000222: Easycard Ltd
+A000000223: Seagate Technology
+A000000224: Tokyu Corporation
+A000000225: Laser Card Services Ltd.
+A000000226: Irish Payment Services Organisation
+A000000227: KFTC (Korea Financial Telecommunications & Clearings Institute)
+A000000228: Saudi Arabian Monetary Agency (SAMA)
+A000000229: ALIASLAB S.P.A.
+A000000230: ECard Pty Ltd
+A000000231: National Police Agency of Japan
+A000000232: COREGATE. CO., Ltd
+A000000233: Professional Performance Systems
+A000000234: Thames Card Technology
+A000000235: MCS Microsystems SDN BHD
+A000000236: Pacific Research Pty Ltd
+A000000237: Keycorp Limited
+A000000238: A.Little.World Pvt. Ltd.
+A000000239: Cornwall County Council
+A000000240: Paypoint Network Ltd.
+A000000241: Visa International
+A000000242: NagraCard S.A.
+A000000243: SAGEM SA
+A000000244: Vasco Data Security NV/SA
+A000000245: Highway Corporation
+A000000246: U.S. Department of Agriculture, Food and Nutrition Service
+A000000247: ISO JTC1/SC17/WG3
+A000000248: ISO JTC1/SC17/WG10
+A000000249: Giesecke & Devrient Asia Pte Ltd
+A000000250: Föreningssparbanken
+A000000251: Electronic Banking Technology Co., Ltd.
+A000000252: Federal Reserve Bank of Boston
+A000000253: Maas International B.V.
+A000000254: Boston Communications Group, Inc.
+A000000255: TellSyn.co.LTD
+A000000256: Hitachi America Ltd.
+A000000257: Jatcom Oy
+A000000258: NWI Markkinointi Oy
+A000000259: Softcard Systems, Inc.
+A000000260: Canon Inc.
+A000000261: Smart Card Laboratory, Inc.
+A000000262: Transport Administration Corporation
+A000000263: Astute Pte Ltd
+A000000264: BC Card Co., Ltd.
+A000000265: RICIOH Company, Ltd.
+A000000266: Sodexho – Pass
+A000000267: Honda Motor Co., Ltd.
+A000000268: City of Sunderland Council
+A000000269: Thales e-Security Limited
+A000000270: Oneempower Pte Ltd
+A000000271: The Bank of Tokyo-Mitsubishi UFJ Ltd.
+A000000272: Bank of the Philippine Islands
+A000000273: Cabcharge Australia Ltd
+A000000274: Glenburn Technologies Private Limited
+A000000275: Takenaka Corporation
+A000000276: MARX CryptoTech LP
+A000000277: Interac Association
+A000000278: MOPASS Consortium
+A000000279: Poslovno Informacioni Sistemi d.o.o.
+A000000280: SATIM
+A000000281: Chequespread Plc
+A000000282: Sentry Project Management PTY Ltd
+A000000283: Chungwa Telecom Co., Ltd. Telecommunication Laboratories
+A000000284: AXA, a.s., Bratislava
+A000000285: WLAN Smart Card Consortium
+A000000286: Thai Smart Card Co., Ltd.
+A000000287: A4 Vision Inc.
+A000000288: Central Bank of the Islamic Republic of Iran
+A000000289: Publicenter Spa
+A000000290: National Council for Prescription Drug Programs
+A000000291: Spirtech
+A000000292: Sumitomo Mitsui Banking Corporation
+A000000293: Videosystem Srl
+A000000294: Banco INBURSA S.A.
+A000000295: Irish Life and Permanent – Trading as Permanent TSB
+A000000296: INSIG2 d.o.o.
+A000000297: Silex technology, Inc
+A000000298: Vodafone global Services
+A000000299: ViVOtech, Inc.
+A000000300: Unigram Systems Pty Ltd
+A000000301: Arab Islamic Bank: Palestinian National Authorities
+A000000302: Cambridgeshire County Council
+A000000303: Global Information Technology L.L.C.
+A000000304: Far Eastern Electronic Toll collection Co., Ltd., R.O.C.
+A000000305: Sarion Systems Research
+A000000306: PS/SC Workgroup
+A000000307: Smart Card Integrators, Tnc.
+A000000308: National Institute of Standards and Technology
+A000000309: Leo Smart Loyalty Management Sdn. Bhd.
+A000000310: Smart Platforms Co., Ltd.
+A000000311: Ubnics Co., Ltd.
+A000000312: Aladdin Knowledge Systems, Inc.
+A000000313: Point Vista Software
+A000000314: Integrated Engineering
+A000000315: Currence Holding/PIN BV
+A000000316: One PIN, Inc.
+A000000317: Sony Corporation
+A000000318: Minoh City Office
+A000000319: Findomestic Banca S.p.A.
+A000000320: Banque Accord
+A000000321: SK Telecom Co, Ltd: Rep. of Korea
+A000000322: Taipei Smart Card Corp.
+A000000323: Identity Alliance
+A000000324: Discover Financial Services LLC
+A000000325: Goddard Technology Corporation
+A000000326: CRYPTAS it-Security & Media GmbH
+A000000327: J & B Computing Services bv
+A000000328: The Minato Bank, Ltd
+A000000329: Irdeto Access B.V.
+A000000330: Volvofinans Konto AB
+A000000331: TV-Card
+A000000332: XponCard AB
+A000000333 : China Unionpay Co. Ltd
+A000000334: oNDS Ltd
+A000000335: Seeker Wireless Pty Ltd
+A000000336: Sagem Denmark A/S
+A000000337: Groupment Interbancaire Monétique de l’ UEMOA
+A000000338: Seceti S.p.A
+A000000339: Dexit Inc
+A000000340: SMEG Co Ltd
+A000000341: InfoComm Development Authority of Signapore
+A000000342: TTA (Telecommunications Technology Association)
+A000000343: Telecommunication Industry Association (3GPP2)
+A000000344: C-SAM Inc
+A000000345: Broadnet Engineering Limited: Kina
+A000000346: ATOS WORLDLINE
+A000000347: Cryptomatic A/S
+A000000348: Security Biometric Clearing Network
+A000000349: MUTOH Industries LTD
+A000000350: Hyundai Motor Company 137-938
+A000000351: Sorefi
+A000000352: Groupement Interbancaire de monetique et des transactions electroniques (GIMTEL)
+A000000353: Ompay, LLC: U.S.A
+A000000354: Nokia Corporation
+A000000355: University of Zagres Faculty of electrical engineering and computing
+A000000356: Transport Ticketing Authority
+A000000357: LEGIC Identsystems AG
+A000000358: Consorzio Triveneto
+A000000359: Euro Alliance of Payment Schemes s.c.r.l. – EAPS
+A000000360: ESP Systex Ltd.
+A000000361: Atos Worldline
+A000000362: AMADEUS IT GROUP S.A.
+A000000363: IOPTE
+A000000364: BICIG
+A000000365: Savvy Technologies ptd Limited
+A000000366: Poste Italiane S.P.A
+A000000367: TWIC Program
+A000000368: Lloyds TSB Bank Plc
+A000000369: OMV Refining and Marketing GmbH
+A000000370: Toshiba Corporation
+A000000371: Verve
+A000000372: Turkish Armed Forces Smartcard Management Center
+A000000373: Quality Equipment Benelux B.V
+A000000374: CPS Technologies
+A000000375: Reference Point Ltd
+A000000376: ECEBS Ltd
+A000000377: Texas Health and Human Services Commission
+A000000378: Texas Health and Human Services Commission
+A000000379: (SOK) Suomen Osuuskauppojen Keskuskunta
+A000000380: E-Kencana
+A000000381: Arval Ltd
+A000000382: HID Global
+A000000383: Cetelem
+A000000384: eftpos, Australian Payments Clearing Association Ltd
+A000000385: NATIXIS PAIEMENTS
+A000000386: AIRTAG
+A000000387: Association Professionnelle des Emetteurs de Titres-Repas Asbl. (A.P.E.T.R)
+A000000388: Ticket Servicos S/A
+A000000389: LINEA S.p.A.
+A000000390: Kamsoft
+A000000391: Ministry of Health, Labour and Welfare Office of Medical Devices and Information, Research and Deve
+A000000392: Laser Cofinoga
+A000000393: Florida Department of Transportation Sunpass Program
+A000000394: OMAC (Office Monétique de l’Afrique Centrale)
+A000000395: Mobile Money S.A
+A000000396: NXP Semiconductors Germany GmbH
+A000000397: Microsoft Corporation
+A000000398: Queensland Transport
+A000000399: Helixion Ltd.: Scotland
+A000000400: BlueSky Positioning Centre International de Communication Avancee
+A000000401: BlueSky Positioning
+A000000402: Mxtran Inc. R.O.C
+A000000403: Jelmoli Bonus Card AG: Schweiz
+A000000404: Setra/BNEVT
+A000000405: European Payment Solutions NV-SA
+A000000406: Aventra Oy
+A000000407: Fujitsu Services Oy
+A000000408: Svenska Handelsbanken AB
+A000000409: Banque Casino
+A000000410: AUSTROADS
+A000000427: Unibanco (Hipercard)
+A000000432: ПРО100
+A000000436: Edenred
+A000000439: ACCEL/Exchange
+A000000454: eTranzact
+A000000456: European Commission: EU
+A000000461: Bcard
+A000000476: Google
+A000000524: RuPay
+A000000527: Yubico
+A000000558: Shell (euroShell Card)
+A000000559: GSMA (GSM Association)
+A000000617: Fidesmo
+A000000626: SwissPass
+A000000630: Dinube (Mobile Payments & Loyalty SL)
+A000000636: Methics Oy
+A000000647: FIDO Aliance
+A000000658: MIR
+A000000696: DEDAPAY S.A.P.I. DE C.V.
+A000000672: TROY
+A000000676: Blackboard Inc.
+A000000740: Innovative Telecommunication Technology, LLC
+A000000741: Wadaro Ltd.
+A000000747: Dangerous Things
+A000000760: PaySwitch Company Limited
+A000000770: Oil Corporation Limited
+A000000782: Telematica LLC
+A000000819: Bitcoin.no AS
+B012345678: MasterCard International
+D040000001: Paylife
+D040000002: Austria Card
+D040000003: Austria Card
+D040000004: Austria Card
+D04000000B: Austria Card
+D04000000C: Austria Card
+D04000000D: Austria Card
+D040000013: Austria Card
+D040000014: Austria Card
+D040000015: Austria Card
+D040000019: Austria Card
+D268000001: Fiscal module application
+D276000001: Gesetzl. KrankenV.
+D276000002: ZeitControl
+D276000003: Deutsche Telek., Telesec
+D276000004: Infineon/Siemens HL
+D276000006: Bosch Telecom UC VT
+D276000007: Fraunhofer SIT
+D276000008: Holtkamp
+D276000009: Novacard
+D276000010: Bosch Telecom OEV
+D276000011: Getronik
+D276000012: Kaste Systemcard
+D276000013: [UNKNOWN]
+D276000014: Siemens SI
+D276000015: KODAK
+D276000016: Bek
+D276000017: Blaupunkt-Werke
+D276000018: Celectronic
+D276000019: M+S V.- u. S.-Techn.
+D276000020: COPILOT
+D276000021: Scheidt & Bachmann
+D276000022: IBM Laboratories
+D276000023: APCON
+D276000024: Lufthansa
+D276000026: AutoMeter
+D276000027: Meiller ComCard
+D276000028: SAGEM ORGA
+D276000029: Contidata
+D276000030: Hagenuk
+D276000031: Mercedes Benz
+D276000032: Winter Wertdruck
+D276000033: EBS
+D276000034: Siemens VT
+D276000035: Gemplus
+D276000036: TeleTrusT
+D276000037: Staatl. Lotterie Bayern
+D276000038: SNI
+D276000039: MW-Lotto
+D276000040: ZI der KV
+D276000041: ELGEBA
+D276000042: TU Darmstadt
+D276000043: AOK Leipzig
+D276000044: HTS
+D276000045: Cards&Devices
+D276000046: ODS
+D276000047: DeTeMobil
+D276000048: DataCard
+D276000049: MARALU
+D276000050: Systemform
+D276000051: Challenge Card Design
+D276000052: Deutsche Telekom, FTZ
+D276000053 Handel
+D276000054: DRK
+D276000055: Siemens ANL
+D276000056: PKV
+D276000057: Interflex
+D276000058: Bayer AG
+D276000061: Competition
+D276000062: TOWITOKO
+D276000063: PAV-CARD
+D276000064: Hess
+D276000065: ATRON
+D276000066: BAPT/BSI
+D276000067: DG-Verlag
+D276000068: Plail
+D276000069: Kaste Zahlungssysteme
+D276000070: ARCOR
+D276000071: BEWATEC
+D276000072: CCS
+D276000073: Bull
+D276000074: Bank-Verlag
+D276000075: DentCard
+D276000076: UITIMACO
+D276000077: DATEV
+D276000078: SI-Elektronik
+D276000079: CE Infosys
+D276000080: Siemens ICN NES
+D276000081: VEGAS
+D276000082: Union Tank
+D276000083: SECUDE
+D276000084: BZA
+D276000085: NXP Semiconductors / NFC Forum
+D276000086: BUILT
+D276000087: PROMEC
+D276000088: Beckmann
+D276000089: PPC Card Systems
+D276000090: SPS
+D276000091: ACG Smartgate
+D276000092: Endergonic
+D276000093: Kahlo
+D276000094: Cichon
+D276000095: ACG (AG) Identification
+D276000098: Cryptovision
+D276000099: DSGV
+D276000100: Seca Vogel&Halke
+D276000101: Celo Communications
+D276000102: Logics Software
+D276000103: Tally
+D276000104: VOEB-ZVD
+D276000105: Kobil
+D276000106: Siemens A&D
+D276000107: TELETEACH
+D276000108: card.etc
+D276000109: ISS
+D276000110: BGS Systemplanung
+D276000111: ELME
+D276000112: My-tronic
+D276000113: AmaTech
+D276000114: ECM
+D276000115: Medizon
+D276000116: Swiss Post Solutions
+D276000117: One Smart World
+D276000118: Giesecke&Devrient Java Card Telecommunikation
+D276000119: TU Berlin
+D276000120: EXAKT
+D276000121: SII
+D276000122: CogniMed
+D276000123: UniKiel
+D276000124: fsfEurope
+D276000125: Wincor Nixdorf
+D276000126: Masktech
+D276000127: DGN-Service
+D276000128: Ostsee-Tourismus
+D276000129: FlexoCard
+D276000130: SMC-Trust
+D276000131: AVS
+D276000132: BSI
+D276000133: metabit
+D276000134: SEFIROT
+D276000135: VDV
+D276000136: Canoa
+D276000137: Compris Intelligence
+D276000138: IICS
+D276000139: IGEL Technology
+D276000140: Globetac Solutions
+D276000141: InterComponentWare AG
+D276000142: GM Consult IT
+D276000143: Web and Cards
+D276000144: gematik
+D276000145: REA Cards
+D276000146: BundesArztekammer
+D276000147: gt german telematics
+D276000148: Physikalisch-Techn. Bundesanstalt (PTB)
+D276000149: TU Dresden
+D276000150: IKK Nordrhein
+D276000151: RIS-Software
+D276000152: Deutscher Sparkassenverlag
+D276000153: Muehlbauer
+D276000154: Vereinigte IKK
+D276000155: IDpendant
+D276000156: OSPT
+D276000157: sysmocom-systems for mobile communications
+D276000158: Intercard GmbH Kartensysteme
+D276000159: [UNKNOWN]
+D276000160: Softways
+D276000161: SimonsVoss Technologies
+D276000162: Swissbit Germany
+D276000163: SDS – Security Data Systems
+D276000164: Telekom Deutschland
+D276000165: 1aim GmbH
+D276000166: Kevin Niehage
+D276000167: PAYBACK
+D276000168: ICP Entwicklungs GmbH
+D276000169: emz Hanauer
+D276000170: achelos GmbH
+D276000171: Goethe-Universitaet Frankfurt
+D276000172: Bundesdruckerei
+D276000173: SMARD Transactions
+D276000174: GS Elektromedizinische Geraete G. Stemple
+D410000001: [UNKNOWN]
+D528005021: [UNKNOWN]
+D578000002: Bankaxept
+D578000002: Bankaxept
+D756000001: Swiss Travel Fund (Reka)
+D756000030: Migros (FCM, GE Money Bank and MasterCard)
+D804000001: PROSTIR: Ukraine
+A000000088102201034221: Buypass AS
+000000116A001: GSA – TFCS
+A00000022820101010: Saudi Arabian Monetary Agency (SAMA)
+A000000333010101: China Unionpay Co. Ltd
+A000000337601001: Groupment Interbancaire Monétique de l’ UEMOA
+A0000003591010: Euro Alliance of Payment Schemes s.c.r.l. – EAPS
+A0000004360100: Edenred
+A0000005241010: RuPay
+A00000061700: Fidesmo javacard
+A0000006260101010001: SwissPass
+A0000006351010: Bancnet
+D0400000190001: EMV ATM Maestro
+D0400000190002: EMV POS Maestro
+D0400000190003: Austria Card
+D0400000190004: EMV POS MasterCard
+D0400000190010: Austria Card
+D268000001: Ministry of Finance of Georgia
+D276000005: Giesecke&Devrient
+D276000005AA040360010410: Giesecke&Devrient
+D276000005AA0503E00401: Giesecke&Devrient
+D276000005AA0503E00501: Giesecke&Devrient
+D276000005AA0503E0050101: Giesecke&Devrient
+D276000005AB0503E0040101: Giesecke&Devrient
+D27600002200000002: IBM Laboratories
+D27600002200000060: IBM Laboratories
+D276000025: ZKA
+D27600002545410100: ZKA
+D27600002545500100: ZKA
+D27600002547410100: ZKA
+D276000060: Wolfgang Rankl
+D2760000850100: NXP Semiconductors / NFC Forum
+D276000118: Giesecke&Devrient Java Card Telecommunikation
+D27600012401: fsfEurope
+D276000124010101FFFF000000010000: fsfEurope
+D2760001240102000000000000010000: fsfEurope
+D27600012402: fsfEurope
+D2760001240200010000000000000000: fsfEurope
+D4100000011010: Republic of Korea
+D5280050218002: [UNKNOWN]
+A000000858044F53452E4348: AirDrop connection negotiation
+A0000000049101: Ventra
+A0000000049100: HOP Fastpass
+A00000000491: Mastercard Private Label Transit
+A000000632010105: China T-Union
+A0000002164954534F2D31: ITSO CMD2
+637001ff434c4950504552: Clipper
+637001ff574d415441: Smart Trip
+637001ff4c41: LA Tap
+A00000F21100: Myki transit card
+DE5C0D1F1CADA5: Madrid transit card
+A00000039656434103F8852200000000: Ubian digital transit card
+A00000039656434103F1216000000000: Las Vegas Monorail
+A000000396564341: MIFARE 2GO
+A0000008580101: Apple Home Key
+A0000008580102: Apple Home Key Framework
+A000000809434343444B417631: Car Connectivity Consortium
+A000000809434343444B467631: Digital Car Key Framework
+D2760000254D010200: Girocard Jugendschutz
+A0000002480400: Personal identification (mDL) data transfer
+A000000476D0000111: Google SmartTap 2.0
+A000000476D0000101: Google SmartTap 1.3 (Deprecated)
+4F53452E5641532E3031: Value-Added Services (OSE.VAS.01)
+A0000008381010: SL Resekort
+D2760000028002000000000000000311: CPM Person SAM
+D2760000028002000000000000000310: CPM Master SAM
+A00000084600CC68E88C0101: VivoKey Apex
+4144204631: Cipurse transport card
+5465736c61444150: TeslaDAP
+F465736C614C6F6769633: teslaLogic (Alternate AID)
+7465736C614C6F6769633: teslaLogic (Original AID)
+7465736C6153746F7265: teslaStore
+A0000000425010: Groupement des Cartes Bancaires
