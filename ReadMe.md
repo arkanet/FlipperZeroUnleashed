@@ -4,6 +4,9 @@ link al file di installazione: https://github.com/haisenteck/Haisenteck-Flipper-
 <br>
 <br>
 # Novità<br>
+- **NFC**<br>
+	- Aggiunto dizionari mifare e non
+ 	- aggiunto codici riconoscimento carte
 - **Sub-GHz**<br>
 	- SubGHz: corretto codice e aggiunto nuovamente protocollo X10<br>
 	- SubGHz: corretto codice e aggiunto nuovamente protocollo Oregon2 per riconoscimento segnale.<br>
