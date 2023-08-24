@@ -1,6 +1,8 @@
 Filetype: IR library file
 Version: 1
-#
+# Last Updated 24th Jul, 2023
+# Last Checked 19th Aug, 2023
+# 
 name: Power
 type: parsed
 protocol: NEC
