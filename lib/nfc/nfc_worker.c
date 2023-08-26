@@ -493,10 +493,10 @@ static bool nfc_worker_read_bank_card(NfcWorker* nfc_worker, FuriHalNfcTxRxConte
     // Bank cards require strong field to start application. If we find AID, try at least several
     // times to start EMV application
     uint8_t start_application_attempts = 0;
-    while(start_application_attempts < 3) {
+    while(start_application_attempts < 10) {
         if(nfc_worker->state != NfcWorkerStateRead) break;
         start_application_attempts++;
-        if(!furi_hal_nfc_detect(&nfc_worker->dev_data->nfc_data, 300)) break;
+        if(!furi_hal_nfc_detect(&nfc_worker->dev_data->nfc_data, 400)) break;
         if(emv_read_bank_card(tx_rx, &emv_app)) {
             FURI_LOG_D(TAG, "Bank card number read from %d attempt", start_application_attempts);
             break;

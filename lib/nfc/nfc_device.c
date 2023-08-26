@@ -1000,6 +1000,7 @@ bool nfc_device_load_bank_card_data(FlipperFormat* file, NfcDevice* dev) {
 
     do {
         // Load essential data
+		// capire come mai continua a dare errore di caricamento dei dati sulla maggior parte delle carte
         if(!flipper_format_get_value_count(file, "AID", &data_cnt)) break;
         data->aid_len = data_cnt;
         if(!flipper_format_read_hex(file, "AID", data->aid, data->aid_len)) break;
