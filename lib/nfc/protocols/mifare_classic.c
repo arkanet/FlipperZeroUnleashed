@@ -384,6 +384,10 @@ bool mf_classic_check_card_type(uint8_t ATQA0, uint8_t ATQA1, uint8_t SAK) {
         return true;
     } else if((ATQA0 == 0x42 || ATQA0 == 0x02) && (SAK == 0x18)) {
         return true;
+    } else if((ATQA0 == 0x08 || ATQA0 == 0x02 ) && (ATQA1 == 0x00) && (SAK == 0x38)) {
+        //MIFARE Classic 4k - emulated (6131 NFC)
+		//MIFARE Classic 4k - emulated (6131 NFC)
+        return true;
     } else {
         return false;
     }
@@ -400,7 +404,7 @@ MfClassicType mf_classic_get_classic_type(uint8_t ATQA0, uint8_t ATQA1, uint8_t 
     } else if((ATQA0 == 0x01) && (ATQA1 == 0x0F) && (SAK == 0x01)) {
         //skylanders support
         return MfClassicType1k;
-    } else if((ATQA0 == 0x42 || ATQA0 == 0x02) && (SAK == 0x18)) {
+    } else if((ATQA0 == 0x42 || ATQA0 == 0x08 || ATQA0 == 0x02) && (SAK == 0x18 || SAK == 0x38)) {
         return MfClassicType4k;
     }
     return MfClassicType1k;
