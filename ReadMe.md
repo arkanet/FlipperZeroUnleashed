@@ -20,7 +20,7 @@ link al file di installazione: https://github.com/haisenteck/Haisenteck-Flipper-
 </ul>
 - **APP**<br>
 <ul>
-	<li>- Aggiunto quasi tutte le app trovate e aggiornate alle API 35.0</li><br>
+	<li>- Aggiunto quasi tutte le app trovate e aggiornate alle API 35.1</li><br>
 </ul>
 <br>
 <br>
