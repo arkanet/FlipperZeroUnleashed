@@ -5,6 +5,9 @@ link al file di installazione: https://github.com/haisenteck/Haisenteck-Flipper-
 <br>
 # Novità<br>
 - **NFC**<br>
+	- aggiunto riconoscimento corretto per le carte
+ 		MIFARE Classic 4k - emulated (6131 NFC)
+		MIFARE Classic 4k - emulated (6131 NFC)
 	- Aggiunto dizionari mifare e non
  	- aggiunto codici riconoscimento carte
 - **Sub-GHz**<br>
