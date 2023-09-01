@@ -16,7 +16,6 @@ link al file di installazione: https://github.com/haisenteck/Haisenteck-Flipper-
 <ul>
 	<li>SubGHz: corretto codice e aggiunto nuovamente protocollo X10</li><br>
 	<li>SubGHz: corretto codice e aggiunto nuovamente protocollo Oregon2 per riconoscimento segnale.</li><br>
-	<li>SubGHz: aggiunto frequenze per canali da 1 a 69 LPD e da 1 a 16 PMR446</li><br>
 </ul>
 - **APP**<br>
 <ul>
