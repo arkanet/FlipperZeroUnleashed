@@ -1,6 +1,6 @@
 {
     "firmware_build_date": "03-09-2023",
-    "firmware_commit": "fc9d3654",
+    "firmware_commit": "1e6d149f",
     "firmware_branch": "dev",
     "firmware_target": 7,
     "firmware_version": "unknown"

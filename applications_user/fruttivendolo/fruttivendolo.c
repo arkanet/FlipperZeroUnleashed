@@ -68,7 +68,7 @@ static void fruttivendolo_render_callback(Canvas* canvas, void* ctx) {
 	canvas_draw_str(canvas, 3, 43, "4 - tv notificaion");
 	canvas_draw_str(canvas, 3, 52, "5 - iphone notification");
 	canvas_draw_str(canvas, 1, 62, "Selezionato:");
-	canvas_draw_str(canvas, 54, 62, "line_");
+	canvas_draw_str(canvas, 54, 62, line_);
 	canvas_draw_circle(canvas, 104, 26, 16);
 	canvas_set_font(canvas, FontSecondary);
 	canvas_draw_str(canvas, 102, 30, "5");
@@ -131,10 +131,6 @@ void read_file() {
         storage_file_close(file);
         storage_file_free(file);
     }
-/*	else {
-		create_file();
-	}
-*/	
 	return;
 }
 
