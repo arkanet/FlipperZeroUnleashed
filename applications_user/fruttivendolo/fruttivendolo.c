@@ -1,15 +1,11 @@
 #include <furi.h>
 #include <furi_hal.h>
-//#include <furi_hal_gpio.h>
-//#include <furi_hal_resources.h>
 #include <gui/gui.h>
 #include <locale/locale.h>
 #include <input/input.h>
 #include <storage/filesystem_api_defines.h>
 #include <storage/storage.h>
-//#include <stream/stream.h>
-//#include <stream/buffered_file_stream.h>
-//#include <toolbox/stream/file_stream.h>
+#include <furi_hal_bt.h>
 #define TAG "fruttivendolo_app"
 
 char* line_;
@@ -62,13 +58,13 @@ static void fruttivendolo_render_callback(Canvas* canvas, void* ctx) {
 	canvas_set_font(canvas, FontPrimary);
 	canvas_draw_str(canvas, 3, 9, "FRUTTIVENDOLO");
 	canvas_set_font(canvas, FontSecondary);
-	canvas_draw_str(canvas, 3, 16, "1 - normale");
-	canvas_draw_str(canvas, 3, 25, "2 - airtag");
-	canvas_draw_str(canvas, 3, 34, "3 - keyboard");
-	canvas_draw_str(canvas, 3, 43, "4 - tv notificaion");
-	canvas_draw_str(canvas, 3, 52, "5 - iphone notification");
-	canvas_draw_str(canvas, 1, 62, "Selezionato:");
-	canvas_draw_str(canvas, 54, 62, line_);
+	canvas_draw_str(canvas, 3, 18, "1 - normale");
+	canvas_draw_str(canvas, 3, 27, "2 - airtag");
+	canvas_draw_str(canvas, 3, 36, "3 - keyboard");
+	canvas_draw_str(canvas, 3, 45, "4 - tv notificaion");
+	canvas_draw_str(canvas, 3, 54, "5 - iphone notification");
+	canvas_draw_str(canvas, 1, 64, "Selezionato:");
+	canvas_draw_str(canvas, 54, 64, line_);
 	canvas_draw_circle(canvas, 104, 26, 16);
 	canvas_set_font(canvas, FontSecondary);
 	canvas_draw_str(canvas, 102, 30, "5");
@@ -77,9 +73,7 @@ static void fruttivendolo_render_callback(Canvas* canvas, void* ctx) {
 	canvas_draw_str(canvas, 103, 41, "1");
 	canvas_draw_str(canvas, 91, 30, "2");
 
-	//canvas_draw_str_aligned(canvas, 40, 30, AlignLeft, AlignTop, furi_string_get_cstr(data->buffer));
-
-    // Release the context, so other threads can update the data.
+	// Release the context, so other threads can update the data.
     furi_mutex_release(fruttivendolo_context->mutex);
 }
 
@@ -175,18 +169,28 @@ int32_t fruttivendolo_app(void* p) {
                     }
 					if(event.input.type == InputTypeShort && event.input.key == InputKeyOk) {
                         create_file("5");
+						furi_hal_bt_stop_advertising();
+						furi_hal_bt_start_advertising();
                     }
 					if(event.input.type == InputTypeShort && event.input.key == InputKeyUp) {
                         create_file("4");
+						furi_hal_bt_stop_advertising();
+						furi_hal_bt_start_advertising();
                     }
 					if(event.input.type == InputTypeShort && event.input.key == InputKeyRight) {
                         create_file("3");
+						furi_hal_bt_stop_advertising();
+						furi_hal_bt_start_advertising();
                     }
 					if(event.input.type == InputTypeShort && event.input.key == InputKeyLeft) {
                         create_file("2");
+						furi_hal_bt_stop_advertising();
+						furi_hal_bt_start_advertising();
                     }
 					if(event.input.type == InputTypeShort && event.input.key == InputKeyDown) {
                         create_file("1");
+						furi_hal_bt_stop_advertising();
+						furi_hal_bt_start_advertising();
                     }
                     break;
                 default:
