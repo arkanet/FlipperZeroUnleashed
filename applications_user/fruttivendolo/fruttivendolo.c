@@ -60,7 +60,7 @@ static void fruttivendolo_render_callback(Canvas* canvas, void* ctx) {
 
     canvas_set_bitmap_mode(canvas, 1);
 	canvas_set_font(canvas, FontPrimary);
-	canvas_draw_str(canvas, 16, 7, "FRUTTAROLO BT");
+	canvas_draw_str(canvas, 3, 9, "FRUTTIVENDOLO");
 	canvas_set_font(canvas, FontSecondary);
 	canvas_draw_str(canvas, 3, 16, "1 - normale");
 	canvas_draw_str(canvas, 3, 25, "2 - airtag");
