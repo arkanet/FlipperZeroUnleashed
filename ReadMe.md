@@ -10,7 +10,7 @@ link al file di installazione: https://github.com/haisenteck/Haisenteck-Flipper-
 	<li>creato app per la gestione, si chiama FRUTTIVENDOLO.<br></li>
 		<ul><li>aprire l'app FRUTTIVENDOLO dalla sezione bluetooth delle app.</li>
 		<li>selezionare la modalità voluta come da indicazioni a schermo</li>
-		<li>andare nelle impostazioni bluetooth e avviare/riavviare il bluetooth per rendere effettive le modifiche.</li></ul>
+		<li><del>andare nelle impostazioni bluetooth e avviare/riavviare il bluetooth per rendere effettive le modifiche.</del> risolto, ora si riavvia alla selezione della versione</li></ul>
 	
 </ul>
 - **NFC**<br>
