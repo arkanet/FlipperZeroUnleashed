@@ -7,13 +7,15 @@
 #include <furi_hal.h>
 #include <furi.h>
 #define TAG "BtGap"
-#define FAST_ADV_TIMEOUT 30000
-#define INITIAL_ADV_TIMEOUT 60000
+//#define FAST_ADV_TIMEOUT 30000
+//#define INITIAL_ADV_TIMEOUT 60000
+#define FAST_ADV_TIMEOUT 5000
+#define INITIAL_ADV_TIMEOUT 5000
 #define GAP_INTERVAL_TO_MS(x)(uint16_t)((x) *1.25)
 //---------------------------------------------------------------------------
 char* settaggio;
 int set_ver;
-int BUFFER = 30;
+int BUFFER = 5;
 
 typedef struct {
     uint16_t gap_svc_handle;
@@ -30,8 +32,8 @@ typedef struct {
     GapConfig* config;
     GapConnectionParams connection_params;
     GapState state;
-    int8_t conn_rssi;           //uhmmmm che sia qui la causa?
-    uint32_t time_rssi_sample;	//uhmmmm che sia qui la causa?
+    int8_t conn_rssi;
+    uint32_t time_rssi_sample;
     FuriMutex* state_mutex;
     GapEventCallback on_event_cb;
     void* context;
@@ -53,7 +55,6 @@ static const uint8_t gap_erk[16] = {0xfe, 0xdc, 0xba, 0x09, 0x87, 0x65, 0x43, 0x
 static Gap *gap = NULL;
 static void gap_advertise_start(GapState new_state);
 static int32_t gap_app(void *context);
-
 
 void read_file() {
     Storage* storage = furi_record_open(RECORD_STORAGE);
@@ -685,9 +686,9 @@ static void gap_init_svc(Gap* gap) {
 }
 
 static void gap_advertise_start(GapState new_state) {
-    	read_file();
-		set_ver = atoi(settaggio);
-		if (set_ver == 2 || set_ver == 3 || set_ver == 4 || set_ver == 5 || set_ver == 6){
+    read_file();
+	set_ver = atoi(settaggio);
+	if (set_ver == 2 || set_ver == 3 || set_ver == 4 || set_ver == 5 || set_ver == 6){
 		tBleStatus status;
 		uint16_t min_interval;
 		uint16_t max_interval;
@@ -824,9 +825,7 @@ static void gap_advertise_stop() {
     gap->on_event_cb(event, gap->context);
 }
 void gap_start_advertising() {
-    read_file();
-	set_ver = atoi(settaggio);
-	furi_mutex_acquire(gap->state_mutex, FuriWaitForever);
+    furi_mutex_acquire(gap->state_mutex, FuriWaitForever);
     if(gap->state == GapStateIdle) {
         gap->state = GapStateStartingAdv;
         FURI_LOG_I(TAG, "Start advertising");

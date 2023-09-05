@@ -59,7 +59,7 @@ static void fruttivendolo_render_callback(Canvas* canvas, void* ctx) {
 	canvas_draw_str(canvas, 3, 18, "1 normale");
 	canvas_draw_str(canvas, 3, 27, "2 airtag");
 	canvas_draw_str(canvas, 3, 36, "3 keyboard");
-	canvas_draw_str(canvas, 3, 45, "4 tv notificaion");
+	canvas_draw_str(canvas, 3, 45, "4 tv notification");
 	canvas_draw_str(canvas, 3, 54, "5 iphone notification");
 	canvas_draw_str(canvas, 112, 48, "6");
 	canvas_draw_str(canvas, 3, 64, "6 trasferisci numero   Sel: ");
