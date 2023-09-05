@@ -24,7 +24,8 @@ link al file di installazione: https://github.com/haisenteck/Haisenteck-Flipper-
 - **Sub-GHz**<br>
 <ul>
 	<li>SubGHz: corretto codice e aggiunto nuovamente protocollo X10</li><br>
-	<li>SubGHz: corretto codice e aggiunto nuovamente protocollo Oregon2 per riconoscimento segnale.</li><br>
+	<li>SubGHz: corretto codice e aggiunto nuovamente protocollo Oregon2 per riconoscimento segnale.</li>
+	<li>Subghz Rolling Flaws - app aggiunta grazie a https://github.com/jamisonderek/flipper-zero-tutorials </li><br>
 </ul>
 - **APP**<br>
 <ul>
