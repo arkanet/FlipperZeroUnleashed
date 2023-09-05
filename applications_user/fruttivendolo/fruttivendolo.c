@@ -52,27 +52,25 @@ static void fruttivendolo_render_callback(Canvas* canvas, void* ctx) {
     fruttivendoloData* data = fruttivendolo_context->data;
     
 	furi_string_printf(data->buffer, "Basic");
-    //furi_string_cat_printf(data->buffer, "fruttivendolo");
-
     canvas_set_bitmap_mode(canvas, 1);
 	canvas_set_font(canvas, FontPrimary);
-	canvas_draw_str(canvas, 3, 9, "FRUTTIVENDOLO");
+	canvas_draw_str(canvas, 10, 9, "FRUTTIVENDOLO");
 	canvas_set_font(canvas, FontSecondary);
-	canvas_draw_str(canvas, 3, 18, "1 - normale");
-	canvas_draw_str(canvas, 3, 27, "2 - airtag");
-	canvas_draw_str(canvas, 3, 36, "3 - keyboard");
-	canvas_draw_str(canvas, 3, 45, "4 - tv notificaion");
-	canvas_draw_str(canvas, 3, 54, "5 - iphone notification");
-	canvas_draw_str(canvas, 1, 64, "Selezionato:");
-	canvas_draw_str(canvas, 54, 64, line_);
-	canvas_draw_circle(canvas, 104, 26, 16);
+	canvas_draw_str(canvas, 3, 18, "1 normale");
+	canvas_draw_str(canvas, 3, 27, "2 airtag");
+	canvas_draw_str(canvas, 3, 36, "3 keyboard");
+	canvas_draw_str(canvas, 3, 45, "4 tv notificaion");
+	canvas_draw_str(canvas, 3, 54, "5 iphone notification");
+	canvas_draw_str(canvas, 112, 48, "6");
+	canvas_draw_str(canvas, 3, 64, "6 trasferisci numero   Sel: ");
+	canvas_draw_str(canvas, 108, 64, line_);
+	canvas_draw_circle(canvas, 96, 26, 16);
 	canvas_set_font(canvas, FontSecondary);
-	canvas_draw_str(canvas, 102, 30, "5");
-	canvas_draw_str(canvas, 113, 30, "3");
-	canvas_draw_str(canvas, 102, 19, "4");
-	canvas_draw_str(canvas, 103, 41, "1");
-	canvas_draw_str(canvas, 91, 30, "2");
-
+	canvas_draw_str(canvas, 94, 30, "5");
+	canvas_draw_str(canvas, 105, 30, "3");
+	canvas_draw_str(canvas, 94, 19, "4");
+	canvas_draw_str(canvas, 95, 41, "1");
+	canvas_draw_str(canvas, 83, 30, "2");
 	// Release the context, so other threads can update the data.
     furi_mutex_release(fruttivendolo_context->mutex);
 }
@@ -87,7 +85,7 @@ void create_file(char* par1) {
     // storage_file_alloc gives to us a File pointer using the Storage API.
     File* file = storage_file_alloc(storage);
 	bool result =
-        storage_file_open(file, EXT_PATH("settings/blmode.config"), FSAM_WRITE, FSOM_OPEN_ALWAYS);
+        storage_file_open(file, INT_PATH(".blmode.config"), FSAM_WRITE, FSOM_OPEN_ALWAYS);
     char* content = (char*)malloc(sizeof(char) * BUFFER);
     content = par1;
 	line_ = content;
@@ -111,7 +109,7 @@ void read_file() {
 
     // here I used FSOM_OPEN_EXISTING (Open file, fail if file doesn't exist)
     bool result =
-        storage_file_open(file, EXT_PATH("settings/blmode.config"), FSAM_READ_WRITE, FSOM_OPEN_ALWAYS);
+        storage_file_open(file, INT_PATH(".blmode.config"), FSAM_READ_WRITE, FSOM_OPEN_ALWAYS);
 
     if(result) {
         int buffer_size = 128;
@@ -163,9 +161,14 @@ int32_t fruttivendolo_app(void* p) {
             switch (event.type) {
                 case fruttivendoloEventTypeKey:
                     // Short press of back button exits the program.
-                    if(event.input.type == InputTypeShort && event.input.key == InputKeyBack) {
+                    if(event.input.type == InputTypeLong && event.input.key == InputKeyBack) {
                         FURI_LOG_I(TAG, "Short-Back pressed. Exiting program.");
                         processing = false;
+                    }
+					if(event.input.type == InputTypeShort && event.input.key == InputKeyBack) {
+                        create_file("6");
+						furi_hal_bt_stop_advertising();
+						furi_hal_bt_start_advertising();
                     }
 					if(event.input.type == InputTypeShort && event.input.key == InputKeyOk) {
                         create_file("5");
